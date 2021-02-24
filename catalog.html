@@ -24,7 +24,8 @@
     </form>
 
     <ul>
-      <li><a href="#">Войти</a></li>
+      <li><a href="#">Валентин Петухов</a></li>
+      <li><a href="#">Выйти</a></li>
       <li><a href="#">Сравнить</a></li>
       <li><a href="#">Корзина</a></li>
     </ul>
@@ -69,13 +70,19 @@
           <p>
             <label>
               от
-              <input type="range" min="0" max="10000" value="0">
+              <output for="price-left">0</output>
+            </label>
+            <label>
+              <input type="range" min="0" max="10000" value="0" id="price-left">
             </label>
           </p>
           <p>
             <label>
               до
-              <input type="range" min="0" max="10000" value="5000">
+              <output for="price-right">5000</output>
+            </label>
+            <label>
+              <input type="range" min="0" max="10000" value="5000" id="price-right">
             </label>
           </p>
         </fieldset>
@@ -150,44 +157,53 @@
       <h2>Список товаров</h2>
       <ul>
         <li>
-          <h3>Любительская селфи-палка</h3>
           <img src="img/device/1-item.png" width="360" height="380" alt="Любительская селфи-палка">
+          <h3><a href="#">Любительская селфи-палка</a></h3>
           <p>1 100 руб.</p>
-          <button type="button">в корзину</button>
-          <button type="button">Добавить к сравнению</button>
+          <div>
+            <button type="button">в корзину</button>
+            <button type="button">Добавить к сравнению</button>
+          </div>
         </li>
         <li>
-          <h3>Профессиональная селфи-палка </h3>
           <img src="img/device/2-item.png" width="360" height="380" alt="Профессиональная селфи-палка ">
+          <h3><a href="#">Профессиональная селфи-палка</a></h3>
           <p>1 500 руб.</p>
-          <button type="button">в корзину</button>
-          <button type="button">Добавить к сравнению</button>
+          <div>
+            <button type="button">в корзину</button>
+            <button type="button">Добавить к сравнению</button>
+          </div>
         </li>
         <li>
-          <h3>Непотопляемая селфи-палка</h3>
           <img src="img/device/3-item.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+          <h3><a href="#">Непотопляемая селфи-палка</a></h3>
           <p>1 500 руб.</p>
-          <button type="button">в корзину</button>
-          <button type="button">Добавить к сравнению</button>
+          <div>
+            <button type="button">в корзину</button>
+            <button type="button">Добавить к сравнению</button>
+          </div>
         </li>
         <li>
-          <h3>Селфи-палка «Следуй за мной»</h3>
           <img src="img/device/4-item.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+          <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
           <p>1 900 руб.</p>
-          <button type="button">в корзину</button>
-          <button type="button">Добавить к сравнению</button>
+          <div>
+            <button type="button">в корзину</button>
+            <button type="button">Добавить к сравнению</button>
+          </div>
         </li>
       </ul>
     </section>
 
     <section>
       <h2>Пагинация</h2>
-      <button type="button">Назад</button>
+      <button type="button">назад</button>
       <ul>
         <li><a>1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
       </ul>
+      <button type="button">вперёд</button>
     </section>
   </main>
 
