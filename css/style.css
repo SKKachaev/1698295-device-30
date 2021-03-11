@@ -265,7 +265,10 @@ ul {
   text-transform: uppercase;
 }
 .main-information-delivery-list a {
+  text-transform: none;
+  letter-spacing: normal;
   color: var(--basic-black);
+
   font-family: var(--gilroy);
   font-weight: 800;
   font-size: 16px;
@@ -345,6 +348,12 @@ ul {
   color: var(--hover-grey);
 }
 .main-search input:focus {
+  color: var(--basic-black);
+}
+.main-search input:hover::placeholder {
+  color: var(--hover-grey);
+}
+.main-search input:active::placeholder {
   color: var(--basic-black);
 }
 
