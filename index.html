@@ -51,10 +51,10 @@
   </header>
 
   <main class="main-main">
-    <h1>Интернет-магазин «Девайс»</h1>
+    <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
 
     <section class="main-popular">
-      <h2>Популярные товары</h2> <!-- На макете этого нет, но по смыслу этот блок похож на топ популярных товаров -->
+      <h2 class="visually-hidden">Популярные товары</h2> <!-- На макете этого нет, но по смыслу этот блок похож на топ популярных товаров -->
       <div class="main-popular-slider"> <!-- role="slider -->
         <input type="radio" name="popular-s" id="popular-s-1" checked="checked">
         <input type="radio" name="popular-s" id="popular-s-2">
@@ -128,7 +128,7 @@
     </section>
 
     <section class="main-category">
-      <h2>Популярные категории</h2>
+      <h2 class="visually-hidden">Популярные категории</h2>
       <ul class="main-category-list">
         <li class="main-category-item">
           <a href="#">
@@ -182,15 +182,15 @@
     </section>
 
     <section class="main-service">
-      <h2>Услуги</h2>
+      <h2 class="visually-hidden">Услуги</h2>
       <div class="main-service-slider"> <!-- role="slider" -->
         <input type="radio" name="service-s" id="service-s-1" checked="checked">
         <input type="radio" name="service-s" id="service-s-2">
         <input type="radio" name="service-s" id="service-s-3">
         <div>
-          <label for="service-s-1">Доставка</label>
-          <label for="service-s-2">Грантия</label>
-          <label class="service-checked" for="service-s-3">Кредит</label>
+          <label class="service-checked" for="service-s-1">Доставка</label>
+          <label class="service-unchecked" for="service-s-2">Гарантия</label>
+          <label class="service-unchecked" for="service-s-3">Кредит</label>
         </div>
         <ul class="main-service-slider-list">
           <li class="main-service-slider-item">
@@ -219,7 +219,7 @@
     </section>
 
     <section class="main-brand">
-      <h2>Бренды, с которыми мы работаем</h2>
+      <h2 class="visually-hidden">Бренды, с которыми мы работаем</h2>
       <ul class="main-brand-list">
         <li><img src="img/logo/1-dji.png" width="260" height="100" alt="«Диджитал»"></li>
         <li><img src="img/logo/2-spg.png" width="260" height="100" alt="«СП Гаджетс»"></li>
@@ -254,14 +254,16 @@
 
   <footer class="main-footer">
     <section class="main-footer-contacts">
-      <h2>Контакты</h2> <!-- Раздел повторяет название другого из main, но тут даже больше подходит такое название -->
-      <img src="img/device-bot.svg" width="163" height="35" alt="Интернет-магазин «Девайс»!">
+      <h2 class="visually-hidden">Контакты</h2> <!-- Раздел повторяет название другого из main, но тут даже больше подходит такое название -->
+      <a href="index.html">
+        <img src="img/device-bot.svg" width="163" height="35" alt="Интернет-магазин «Девайс»!">
+      </a>
       <p>г. Москва, ул. Строителей, 15</p>
       <p>Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
     </section>
 
     <section class="main-footer-menu">
-      <h2>Действия</h2>
+      <h2 class="visually-hidden">Действия</h2>
         <ul>
           <li><a href="#">Войти</a></li>
           <li><a href="#">Сравнить</a></li>
@@ -270,7 +272,7 @@
     </section>
 
     <section>
-      <h2>Навигация</h2>
+      <h2 class="visually-hidden">Навигация</h2>
       <nav class="main-footer-navigation">
         <ul class="main-footer-navigation-list">
           <li><a href="#">Доставка</a></li>
@@ -281,16 +283,16 @@
     </section>
 
     <section class="main-social">
-      <h2>Социальные сети</h2>
+      <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="main-social-list">
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
-        <li><a href="#">Твиттер</a></li>
+        <li><a href="#"><img src="img/social/icon-facebook.svg" width="32" height="32" alt="Фейсбук"></a></li>
+        <li><a href="#"><img src="img/social/icon-instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
+        <li><a href="#"><img src="img/social/icon-twitter.svg" width="32" height="32" alt="Твиттер"></a></li>
       </ul>
     </section>
 
     <section class="main-creationby">
-      <h2>Разработчик сайта</h2>
+      <h2 class="visually-hidden">Разработчик сайта</h2>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/academy.svg" width="27" height="34" alt="HTML-Academy">
       </a>
@@ -299,13 +301,13 @@
 
   <!--  Попап с картой-->
   <section class="main-map">
-    <h2>Карта</h2>
+    <h2 class="visually-hidden">Карта</h2>
     <img src="img/map-big.jpg" width="994" height="593" alt="Карта. Мы здесь!">
   </section>
 
   <!--  Попап с формой обратной связи-->
   <section class="main-feedback">
-    <h2>Форма для обратной связи</h2>
+    <h2 class="visually-hidden">Форма для обратной связи</h2>
     <button type="button">Закрыть</button>
     <form class="main-feedback-form" action="#" method="post">
       <p>
