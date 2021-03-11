@@ -353,7 +353,7 @@ ul {
 .main-search input:hover::placeholder {
   color: var(--hover-grey);
 }
-.main-search input:active::placeholder {
+.main-search input:focus::placeholder {
   color: var(--basic-black);
 }
 
